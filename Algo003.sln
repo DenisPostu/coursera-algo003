@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coursera.Implementations", "Coursera.Implementations\Coursera.Implementations.csproj", "{84FE247A-1A36-421B-81A2-0377503C90AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coursera.Core", "Coursera.Implementations.Core\Coursera.Core.csproj", "{EF71C8BA-67BF-45C1-9EDB-980867765204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coursera.Implementations.Tests", "Coursera.Implementations.Tests\Coursera.Implementations.Tests.csproj", "{B553A764-ECFE-418B-8D1B-16DA3237FD15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84FE247A-1A36-421B-81A2-0377503C90AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84FE247A-1A36-421B-81A2-0377503C90AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84FE247A-1A36-421B-81A2-0377503C90AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84FE247A-1A36-421B-81A2-0377503C90AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF71C8BA-67BF-45C1-9EDB-980867765204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF71C8BA-67BF-45C1-9EDB-980867765204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF71C8BA-67BF-45C1-9EDB-980867765204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF71C8BA-67BF-45C1-9EDB-980867765204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B553A764-ECFE-418B-8D1B-16DA3237FD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B553A764-ECFE-418B-8D1B-16DA3237FD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B553A764-ECFE-418B-8D1B-16DA3237FD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B553A764-ECFE-418B-8D1B-16DA3237FD15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
