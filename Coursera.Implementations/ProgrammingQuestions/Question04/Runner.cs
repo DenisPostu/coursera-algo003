@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Coursera.Core;
 using Coursera.Core.Attributes;
 using Coursera.Core.Benchmark;
+using Coursera.DataStructures.Graphs;
 
 namespace Coursera.Implementations.ProgrammingQuestions.Question04
 {
@@ -26,7 +27,7 @@ namespace Coursera.Implementations.ProgrammingQuestions.Question04
         {
             var readingInputFileTask = "Reading input data";
             var computingSccsTask = "Computing SCCs";
-            var adjacencyList = new List<Edge>();
+            var adjacencyList = new List<DirectedEdge>();
             var numbers = new int[2];
             var connector = new GraphComponentsConnector();
             var min = int.MaxValue;
@@ -39,7 +40,7 @@ namespace Coursera.Implementations.ProgrammingQuestions.Question04
                 while ((line = reader.ReadLine()) != null)
                 {
                     numbers = line.Split(new[] {' ', '\t'}, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
-                    adjacencyList.Add(new Edge(numbers[0], numbers[1]));
+                    adjacencyList.Add(new DirectedEdge(numbers[0], numbers[1]));
                     min = Math.Min(min, Math.Min(numbers[0], numbers[1]));
                     max = Math.Max(max, Math.Max(numbers[0], numbers[1]));
                 }

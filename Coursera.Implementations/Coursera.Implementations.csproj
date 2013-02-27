@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProgrammingQuestions\Question05\Runner.cs" />
     <Compile Include="ProgrammingQuestions\Question03\GraphContractor.cs" />
     <Compile Include="ProgrammingQuestions\Question03\Runner.cs" />
     <Compile Include="ProgrammingQuestions\Question01\InversionCounter.cs" />
@@ -58,6 +59,9 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ProgrammingQuestions\Question05\input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="ProgrammingQuestions\Question03\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -84,6 +88,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Coursera.DataStructures\Coursera.DataStructures.csproj">
+      <Project>{A7FCBBDE-C2BF-494D-86BD-ED3BA8AF7BBD}</Project>
+      <Name>Coursera.DataStructures</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Coursera.Implementations.Core\Coursera.Core.csproj">
       <Project>{EF71C8BA-67BF-45C1-9EDB-980867765204}</Project>
       <Name>Coursera.Core</Name>

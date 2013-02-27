@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Coursera.DataStructures.Graphs;
 
 namespace Coursera.Implementations.ProgrammingQuestions.Question04
 {
@@ -12,7 +13,7 @@ namespace Coursera.Implementations.ProgrammingQuestions.Question04
         private HashSet<int> m_visited = new HashSet<int>(); 
         private Stack<int> m_exclusionStack = new Stack<int>();
 
-        public IEnumerable<List<int>> FindConnectedComponents(int a, int b, List<Edge> adjacencyList)
+        public IEnumerable<List<int>> FindConnectedComponents(int a, int b, List<DirectedEdge> adjacencyList)
         {
             for (var i = a; i <= b; ++i)
             {
@@ -67,38 +68,4 @@ namespace Coursera.Implementations.ProgrammingQuestions.Question04
             m_exclusionStack.Push(i);
         }
     }
-
-    public class Edge
-    {
-
-        public override int GetHashCode()
-        {
-            unchecked
-            {
-                return (A * 397) ^ B;
-            }
-        }
-
-        public Edge(int a, int b)
-        {
-            A = a;
-            B = b;
-        }
-
-        public int A { get; set; }
-        public int B { get; set; }
-
-        protected bool Equals(Edge other)
-        {
-            return A == other.A && B == other.B;
-        }
-
-        public override bool Equals(object obj)
-        {
-            if (ReferenceEquals(null, obj)) return false;
-            if (ReferenceEquals(this, obj)) return true;
-            if (obj.GetType() != this.GetType()) return false;
-            return Equals((Edge)obj);
-        }
-    }   
 }

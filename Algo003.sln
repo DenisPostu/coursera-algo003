@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coursera.DataStructures", "Coursera.DataStructures\Coursera.DataStructures.csproj", "{A7FCBBDE-C2BF-494D-86BD-ED3BA8AF7BBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{B553A764-ECFE-418B-8D1B-16DA3237FD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B553A764-ECFE-418B-8D1B-16DA3237FD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B553A764-ECFE-418B-8D1B-16DA3237FD15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7FCBBDE-C2BF-494D-86BD-ED3BA8AF7BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7FCBBDE-C2BF-494D-86BD-ED3BA8AF7BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7FCBBDE-C2BF-494D-86BD-ED3BA8AF7BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7FCBBDE-C2BF-494D-86BD-ED3BA8AF7BBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
