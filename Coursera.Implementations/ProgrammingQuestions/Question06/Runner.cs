@@ -17,7 +17,7 @@ namespace Coursera.Implementations.ProgrammingQuestions.Question06
     {
         public async Task Run()
         {
-            //await Task.Run(() => InternalRunForTwoSum());
+            await Task.Run(() => InternalRunForTwoSum());
             await Task.Run(() => InternalRunForMedianMaintenance());
         }
 

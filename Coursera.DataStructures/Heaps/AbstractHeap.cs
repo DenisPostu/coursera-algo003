@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Coursera.DataStructures.Heaps
 {
@@ -19,7 +16,8 @@ namespace Coursera.DataStructures.Heaps
 
         private void Heapify()
         {
-
+            for (var i = Size - 1; i >= 0; --i)
+                SiftUp(i);
         }
 
         public int Size { get { return m_items.Count; } }
