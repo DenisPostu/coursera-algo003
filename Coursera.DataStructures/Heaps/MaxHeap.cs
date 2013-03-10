@@ -16,7 +16,7 @@ namespace Coursera.DataStructures.Heaps
         
         protected override bool HasHigherPriority(T a, T b)
         {
-            return a.CompareTo(b) == 1;
+            return a.CompareTo(b) >= 0;
         }
     }
 }

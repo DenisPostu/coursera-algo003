@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using Coursera.Core;
 using Coursera.Core.Attributes;
 using Coursera.Core.Benchmark;
@@ -59,9 +57,6 @@ namespace Coursera.Implementations.ProgrammingQuestions.Question05
 
             Console.WriteLine("{1} took {0}ms", Benchmarker.EllapsedMilliseconds(computingPathsTask), computingPathsTask);
             Console.WriteLine("Shortest distances to vertices {0} are {1}", verticesToFindDistance, shortestPathsToOutput);
-            Console.WriteLine("The output has been copied to the clipboard.");
-
-            Clipboard.SetText(shortestPathsToOutput);
         }
     }
 }

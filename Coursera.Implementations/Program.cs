@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Coursera.Implementations.ProgrammingQuestions.Question05;
+using Coursera.Implementations.ProgrammingQuestions.Question06;
 
 namespace Coursera.Implementations
 {

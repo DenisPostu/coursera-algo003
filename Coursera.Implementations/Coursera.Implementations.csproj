@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProgrammingQuestions\Question06\MedianMaintainer.cs" />
+    <Compile Include="ProgrammingQuestions\Question06\Runner.cs" />
     <Compile Include="ProgrammingQuestions\Question05\Dijkstra.cs" />
     <Compile Include="ProgrammingQuestions\Question05\Runner.cs" />
     <Compile Include="ProgrammingQuestions\Question03\GraphContractor.cs" />
@@ -52,6 +54,7 @@
     <Compile Include="ProgrammingQuestions\Question02\Runner.cs" />
     <Compile Include="ProgrammingQuestions\Question04\GraphComponentsConnector.cs" />
     <Compile Include="ProgrammingQuestions\Question04\Runner.cs" />
+    <Compile Include="ProgrammingQuestions\Question06\TwoSumSolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="TheoryProblems\Problem3OfJanuary28th\Runner.cs" />
@@ -61,6 +64,15 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ProgrammingQuestions\Question06\input-b1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProgrammingQuestions\Question06\input-b.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProgrammingQuestions\Question06\input-a.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="ProgrammingQuestions\Question05\input1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
