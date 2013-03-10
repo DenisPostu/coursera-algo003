@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Coursera.Core;
 using Coursera.Core.Attributes;
 using Coursera.Core.Benchmark;
@@ -16,20 +17,18 @@ namespace Coursera.Implementations.ProgrammingQuestions.Question05
     {
         public Task Run()
         {
-            var t = new Thread(InternalRun, 200 << 20);
-            t.Start();
-            t.Join();
-
-            return Task.FromResult(true);
+            return Task.Run(() => InternalRun());
         }
 
         private void InternalRun()
         {
             var readingInputFileTask = "Reading input data";
             var computingPathsTask = "Computing paths";
+            var verticesToFindDistance = "7,37,59,82,99,115,133,165,188,197";
             var numbers = new string[]{};
             var edgesList = new List<WeightedUndirectedEdge>();
             int vertex = -1;
+            int maxVertex = -1;
 
             Benchmarker.Start(readingInputFileTask);
             using (var reader = new StreamReader("ProgrammingQuestions/Question05/input.txt"))
@@ -39,6 +38,7 @@ namespace Coursera.Implementations.ProgrammingQuestions.Question05
                 {
                     numbers = line.Split(new[] {' ', '\t'}, StringSplitOptions.RemoveEmptyEntries).ToArray();
                     vertex = int.Parse(numbers.First());
+                    maxVertex = Math.Max(maxVertex, vertex);
                     
                     edgesList.AddRange(
                         numbers
@@ -52,11 +52,16 @@ namespace Coursera.Implementations.ProgrammingQuestions.Question05
             Console.WriteLine("{1} took {0}ms", Benchmarker.EllapsedMilliseconds(readingInputFileTask), readingInputFileTask);
 
             Benchmarker.Start(computingPathsTask);
-            // work goes here
+            var shortestPaths = new Dijkstra().ComputeFor(edgesList, maxVertex, 1000000);
+            var shortestPathsToFind = verticesToFindDistance.Split(new[] {','}).Select(c => shortestPaths[int.Parse(c)]).ToArray();
+            var shortestPathsToOutput = string.Join(",", shortestPathsToFind);
             Benchmarker.Stop(computingPathsTask);
 
             Console.WriteLine("{1} took {0}ms", Benchmarker.EllapsedMilliseconds(computingPathsTask), computingPathsTask);
-            // output goes here
+            Console.WriteLine("Shortest distances to vertices {0} are {1}", verticesToFindDistance, shortestPathsToOutput);
+            Console.WriteLine("The output has been copied to the clipboard.");
+
+            Clipboard.SetText(shortestPathsToOutput);
         }
     }
 }

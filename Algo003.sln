@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coursera.DataStructures", "Coursera.DataStructures\Coursera.DataStructures.csproj", "{A7FCBBDE-C2BF-494D-86BD-ED3BA8AF7BBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coursera.DataStructures.Tests", "Coursera.DataStructures.Tests\Coursera.DataStructures.Tests.csproj", "{77C0F52D-D1BE-4C26-BC7E-A369A9A9D6B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{A7FCBBDE-C2BF-494D-86BD-ED3BA8AF7BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7FCBBDE-C2BF-494D-86BD-ED3BA8AF7BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7FCBBDE-C2BF-494D-86BD-ED3BA8AF7BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C0F52D-D1BE-4C26-BC7E-A369A9A9D6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C0F52D-D1BE-4C26-BC7E-A369A9A9D6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C0F52D-D1BE-4C26-BC7E-A369A9A9D6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C0F52D-D1BE-4C26-BC7E-A369A9A9D6B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

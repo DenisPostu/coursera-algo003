@@ -44,6 +44,10 @@
     <Compile Include="Graphs\IWeightedEdge.cs" />
     <Compile Include="Graphs\UndirectedEdge.cs" />
     <Compile Include="Graphs\WeightedUndirectedEdge.cs" />
+    <Compile Include="Heaps\Heap.cs" />
+    <Compile Include="Heaps\IHeap.cs" />
+    <Compile Include="Heaps\MaxHeap.cs" />
+    <Compile Include="Heaps\MinHeap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
